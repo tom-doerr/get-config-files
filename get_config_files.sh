@@ -3,6 +3,11 @@
 USER="tom-doerr"
 REPOS=( "bashrc" "tmux-conf" "vimrc" )
 
+
+if [ ! -d ~/git/ ]; then
+    mkdir ~/git/
+fi
+
 for repo in ${REPOS[@]}
 do
     if [ ! -d ~/git/$repo/ ]; then
