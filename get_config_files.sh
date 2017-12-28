@@ -5,6 +5,7 @@ REPOS=( "bashrc" "tmux-conf" "vimrc" )
 
 
 if [ ! -d ~/git/ ]; then
+    echo "Directory '~/git' not found! Creating..."
     mkdir ~/git/
 fi
 
