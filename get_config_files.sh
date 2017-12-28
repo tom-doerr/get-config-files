@@ -5,7 +5,7 @@ REPOS=( "bashrc" "tmux-conf" "vimrc" )
 
 for repo in ${REPOS[@]}
 do
-    if [ ! -d /home/tom/git/$repo/ ]; then
+    if [ ! -d ~/git/$repo/ ]; then
         echo "Directory $repo not found! Cloning..."
         cd ~/git/
         git clone git@github.com:$USER/$repo.git
